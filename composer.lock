@@ -21,7 +21,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5 || ^8.0",
+                "php": "^8.3",
                 "phpoption/phpoption": "^1.9.2"
             },
             "require-dev": {
