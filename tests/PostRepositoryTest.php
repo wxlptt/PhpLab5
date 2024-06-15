@@ -49,7 +49,6 @@ class PostRepositoryTest extends TestCase {
         $this->assertEquals($body, $record->body);
 	}
 
-    //composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist --optimize-autoloader
 	public function testPostUpdate() {
         $title = 'test';
         $body = 'body';
