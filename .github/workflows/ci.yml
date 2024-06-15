@@ -25,7 +25,7 @@ jobs:
         run: |
           mysql -h 127.0.0.1 --port 3306 -uroot < ./database/test_schema.sql
           cp .env.ci .env
-          composer install --ignore-platform-req=ext-grpc --ignore-platform-req=ext-sodium --ignore-platform-req=ext-gd
+          composer install --ignore-platform-req=php --ignore-platform-req=ext-grpc --ignore-platform-req=ext-sodium --ignore-platform-req=ext-gd
 
       - name: Run Unit Tests
         run: vendor/bin/phpunit
