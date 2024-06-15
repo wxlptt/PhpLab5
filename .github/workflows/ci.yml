@@ -21,8 +21,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          php-version:'8.2'
       - name: Configure Application
         run: |
           mysql -h 127.0.0.1 --port 3306 -uroot < ./database/test_schema.sql
